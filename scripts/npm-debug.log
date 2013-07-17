@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'karma' ]
+2 info using npm@1.2.10
+3 info using node@v0.8.19
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json C:\Documents and Settings\kimma\Application Data\npm\package.json
+6 verbose read json C:\Documents and Settings\kimma\Application Data\npm\package.json
+7 verbose cache add [ 'karma', null ]
+8 verbose cache add name=undefined spec="karma" args=["karma",null]
+9 verbose parsed url { pathname: 'karma', path: 'karma', href: 'karma' }
+10 silly lockFile 512423cb-karma karma
+11 verbose lock karma C:\Documents and Settings\kimma\Application Data\npm-cache\512423cb-karma.lock
+12 silly lockFile 512423cb-karma karma
+13 silly lockFile 512423cb-karma karma
+14 verbose addNamed [ 'karma', '' ]
+15 verbose addNamed [ null, '' ]
+16 silly lockFile cd7961bb-karma karma@
+17 verbose lock karma@ C:\Documents and Settings\kimma\Application Data\npm-cache\cd7961bb-karma.lock
+18 silly addNameRange { name: 'karma', range: '', hasData: false }
+19 verbose url raw karma
+20 verbose url resolving [ 'https://registry.npmjs.org/', './karma' ]
+21 verbose url resolved https://registry.npmjs.org/karma
+22 info trying registry request attempt 1 at 11:48:46
+23 http GET https://registry.npmjs.org/karma
+24 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+25 info trying registry request attempt 2 at 11:49:21
+26 http GET https://registry.npmjs.org/karma
+27 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+28 info trying registry request attempt 3 at 11:50:42
+29 http GET https://registry.npmjs.org/karma
+30 silly lockFile cd7961bb-karma karma@
+31 silly lockFile cd7961bb-karma karma@
+32 error Error: connect ETIMEDOUT
+32 error     at errnoException (net.js:770:11)
+32 error     at Object.afterConnect [as oncomplete] (net.js:761:19)
+33 error If you need help, you may report this log at:
+33 error     <http://github.com/isaacs/npm/issues>
+33 error or email it to:
+33 error     <npm-@googlegroups.com>
+34 error System Windows_NT 5.1.2600
+35 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "karma"
+36 error cwd C:\angular-seed\scripts
+37 error node -v v0.8.19
+38 error npm -v 1.2.10
+39 error syscall connect
+40 error code ETIMEDOUT
+41 error errno ETIMEDOUT
+42 verbose exit [ 1, true ]
