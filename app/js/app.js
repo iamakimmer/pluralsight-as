@@ -2,4 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-var eventsApp = angular.module('eventsApp', []);
+var eventsApp = angular.module('eventsApp', ['ngResource'])
+	.factory('myCache', function($cacheFactory){
+		return $cacheFactory('myCache', {capacity: 3});
+	});

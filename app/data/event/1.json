@@ -1,0 +1,37 @@
+{
+    "name": "Angular Boot Camp",
+    "date": "01/01/2013",
+    "time": "10:30 AM",
+    "location": {
+        "address": "GoogleHeadquarters",
+        "city": "MountainView",
+        "province": "CA"
+    },
+    "imageUrl": "img/logo.png",
+    "sessions": [
+        {
+            "name": "DirectivesMasterclass",
+            "creatorName": "BobSmith",
+            "duration": "1hr",
+            "level": "Advanced",
+            "abstract": "Inthissessionyouwilllearnaboutdirectives",
+            "upVoteCount": 0
+        },
+        {
+            "name": "Scopesforfunandprofit",
+            "creatorName": "MattKim",
+            "duration": "4hr",
+            "level": "Advanced",
+            "abstract": "Inthissessionyouwilllearnaboutscopes",
+            "upVoteCount": 0
+        },
+        {
+            "name": "MasteringControllers",
+            "creatorName": "BobSmith",
+            "duration": "1hr",
+            "level": "Advanced",
+            "abstract": "Inthissessionyouwilllearnaboutcontrollers",
+            "upVoteCount": 0
+        }
+    ]
+}
