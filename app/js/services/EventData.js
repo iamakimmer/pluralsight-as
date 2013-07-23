@@ -17,7 +17,7 @@ eventsApp.factory('eventData', function ($resource, $q, $timeout) {
 					});
 
 				
-			}, 3000);
+			}, 0);
 			return deferred.promise;
 		}
 	}

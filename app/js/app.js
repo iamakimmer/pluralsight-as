@@ -22,6 +22,16 @@ var eventsApp = angular.module('eventsApp', ['ngResource', 'ngCookies'])
 		$routeProvider.when('/localeSample', {
 			templateUrl: 'templates/LocaleSample.html', controller: 'LocaleSampleController'
 		});	
+		$routeProvider.when('/sampleDirective', {
+			templateUrl: 'templates/SampleDirective.html', controller: 'SampleDirectiveController'
+		});		
+		$routeProvider.when('/eventList', {
+			templateUrl: 'templates/EventList.html', controller: 'EventListController'
+		});		
+		$routeProvider.when('/editProfile', {
+			templateUrl: 'templates/EditProfile.html', controller: 'EditProfileController'
+		});		
+
 		$routeProvider.when('/', {
 			foo: 'bar',
 			resolve: {
@@ -34,7 +44,7 @@ var eventsApp = angular.module('eventsApp', ['ngResource', 'ngCookies'])
 		});	
 		$routeProvider.otherwise({redirectTo: '/'});
 
-		$locationProvider.html5Mode(true);
+		//$locationProvider.html5Mode(true);
 
 	})
 	.factory('myCache', function($cacheFactory){

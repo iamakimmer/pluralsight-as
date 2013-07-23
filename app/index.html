@@ -8,16 +8,19 @@
 </head>
 <body ng-cloak>
 <div class="container">
-	<div class="navbar">
+	<div class="navbar" ng-controller="MainMenuController">
 		<div class="navbar-inner">
 			<ul class="nav">
-				<li><a href="newEvent">Create Event</a></li>
-				<li><a href="timeoutSample">Timeout Sample</a></li>
-				<li><a href="cacheSample">Cache Sample</a></li>
-				<li><a href="compileSample">Compile Sample</a></li>
-				<li><a href="filterSample">Filter Sample</a></li>
-				<li><a href="localeSample">Locale Sample</a></li>
-				<li><a href="cookieSample">Cookie Sample</a></li>
+				<li><a href="#sampleDirective">Sample Directive</a></li>
+				<li><a href="#editProfile">Edit Profile Sample</a></li>
+				<li><a href="#eventList">Event List</a></li>
+				<li><a href="#" ng-click="createEvent()">Create Event</a></li>
+				<li><a href="#timeoutSample">Timeout Sample</a></li>
+				<li><a href="#cacheSample">Cache Sample</a></li>
+				<li><a href="#compileSample">Compile Sample</a></li>
+				<li><a href="#filterSample">Filter Sample</a></li>
+				<li><a href="#localeSample">Locale Sample</a></li>
+				<li><a href="#cookieSample">Cookie Sample</a></li>
 			</ul>
 		</div>
 	</div>
@@ -37,8 +40,17 @@
 <script src="/js/app.js"></script>
 
 <script src="/js/filters.js"></script>
+<script src="/js/directives/eventThumbnail.js"></script>
+<script src="/js/directives/mySample.js"></script>
+<script src="/js/directives/upvote.js"></script>
+<script src="/js/directives/datekeys.js"></script>
+<script src="/js/directives/gravatar.js"></script>
 
+<script src="/js/controllers/MainMenuController.js"></script>
+<script src="/js/controllers/SampleDirectiveController.js"></script>
 <script src="/js/controllers/EventController.js"></script>
+<script src="/js/controllers/EventListController.js"></script>
+
 <script src="/js/controllers/CacheSampleController.js"></script>
 <script src="/js/controllers/CompileSampleController.js"></script>
 <script src="/js/controllers/CookieStoreSampleController.js"></script>
@@ -48,6 +60,7 @@
 <script src="/js/controllers/TimeoutServiceController.js"></script>
 
 <script src="/js/services/EventData.js"></script>
+<script src="/js/services/GravatarUrlBuilder.js"></script>
 </body>
 
 </html>
